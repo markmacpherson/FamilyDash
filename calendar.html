@@ -1,0 +1,27 @@
+<html>
+<head>
+<script src='node_modules/fullcalendar/node_modules/jquery/dist/jquery.min.js'></script>
+<script src='node_modules/fullcalendar/node_modules/moment/moment.js'></script>
+<script type='text/javascript' src='node_modules/fullcalendar/dist/gcal.js'></script>
+<script type='text/javascript' src='node_modules/fullcalendar/dist/fullcalendar.js'></script>
+<link rel="stylesheet"  type='text/css' href='node_modules/fullcalendar/dist/fullcalendar.css'></script>
+
+</head>
+<body>
+<div id='calendar'>
+<script type='text/javascript'>
+	$(document).ready(function(){
+		$('#calendar').fullCalendar({
+			height: 600,
+			eventsources: [
+			{
+				googleCalendarAPIKey:'861038353395-rtqv1b5ii9o6s6ctjefgdb1hol9ajl55.apps.googleusercontent.com',
+				googleCalendarID: '677745uckjf8q90c6j0s9imhfs@group.calendar.google.com',
+				className: 'fc-event-email'
+			}]
+		});
+	});
+</script>
+</div>
+</body>
+</html>
